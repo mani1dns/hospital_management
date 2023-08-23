@@ -3,16 +3,16 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Home Page")
+    return render(request, "index.html")
 
 def about(request):
-    return HttpResponse("About Page")
+    return render(request, "about.html")
 
 def booking(request):
-    return HttpResponse("Booking Page")
+    return render(request, "booking.html")
 
 def doctors(request):
-    return HttpResponse("Doctors Page")
+    return render(request, "doctors.html")
 
 def contact(request):
-    return HttpResponse("Contact Page")
+    return render(request, "contact.html")
