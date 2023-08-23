@@ -16,3 +16,6 @@ def doctors(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+def department(request):
+    return render(request, "department.html")
