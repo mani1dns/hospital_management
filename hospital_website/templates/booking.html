@@ -5,9 +5,14 @@ Booking
 {% endblock %}
 
 {% block content %}
-<h1>Booking Page
+<h1 class = "text-center">Make an Appoinment </h1>
+<hr>
+<div class="container w-50 text-center p-3 my-4 bg-danger">
+    <form action="" method = "POST">
+        {% csrf_token %}
+        {{form.as_p}}
 
-<form action="">
-    {{form.as_p}}
-</form>
+        <button class = "btn btn-primary mb-4" type="submit">SUBMIT </button>
+    </form>
+</div>
 {% endblock %}
